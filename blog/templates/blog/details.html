@@ -1,0 +1,6 @@
+ {{post.title}}
+<hr> {{post.content}}
+<hr> {{post.created}}
+<hr> {{post.image}}
+<a href="{% url 'blog:post_edit' post.post_slug %}">Edit Post</a>
+<a href="{% url 'blog:delete_list' post.post_slug %}">Deleted Post</a>

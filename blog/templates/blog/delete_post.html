@@ -1,0 +1,7 @@
+<p>
+    Are you sure you want to delete "{{post}}"</p>
+<a href="{% url 'blog:delete_list' post.post_slug  %}">Cancel</a>
+<form method="POST" action="">
+    {% csrf_token %}
+    <input type="submit" name="Comfirm">
+</form>

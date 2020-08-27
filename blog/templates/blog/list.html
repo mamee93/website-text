@@ -1,0 +1,7 @@
+{% extends 'beas.html' %}
+
+<a href="{% url 'blog:add_Post' %}">Add Post</a></h3>
+
+{% for list in all_posts %}
+
+<a href="{% url 'blog:post_detail' list.post_slug %}">{{list.title}}</a> {% endfor %}
